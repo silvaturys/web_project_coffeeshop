@@ -83,9 +83,9 @@
               picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
               class="recipes__iframe"></iframe>
-              <div class="recipes recipes__video-caption">
-              <p class="recipes__video-caption2"> Receita Aeropress </p>
-              <p class="recipes__video-caption2"> ~5 min </p>
+              <div class="recipes__video recipes__video-caption">
+              <h4 class="recipes recipes__video-caption2"> Receita Aeropress </h4>
+              <h4 class="recipes recipes__video-caption2"> ~5 min </h4>
             </div>
             </div>
       <!--VIDEO PRENSA FRANCESA-->
@@ -96,14 +96,96 @@
               picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
               class="recipes__iframe"></iframe>
-              <div class="recipes recipes__video-caption">
-              <p class="recipes__video-caption2"> Receita de Prensa Francesa </p>
-              <p class="recipes__video-caption2"> ~15 min </p>
+              <div class="recipes__video recipes__video-caption">
+              <p class="recipes recipes__video-caption2"> Receita de Prensa Francesa </p>
+              <p class="recipes recipes__video-caption2"> ~15 min </p>
             </div>
             </div>
           </div>
         </section>
-      <section class="reservation" id="reservation"></section>
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title"> Reservar uma mesa </h2>
+        <form class="form reservation__form">
+        <!--NOME-->
+          <fieldset class="form reservation__form-item">
+            <label
+            class="reservation__form reservation__form-label"
+            for="name">
+          Nome *
+          </label>
+          <input
+          class="reservation__form reservation__form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nome"
+          required>
+
+        <!-- N DE CONVIDADOS -->
+          <label
+          class="reservation__form reservation__form-label"
+          for="invite_number">
+        Número de convidados *
+        </label>
+          <input
+          class="reservation__form reservation__form-input"
+          type="number"
+          id="invite_number"
+          name="invite_number"
+          min="1"
+          max="8"
+          placeholder="1-8"
+          required>
+
+        <!-- DATA E HORA -->
+          <label
+          class="reservation__form reservation__form-label"
+          for="date-hour">
+        Data e Hora
+        </label>
+          <input
+          class="reservation__form reservation__form-input"
+          type="datetime-local"
+          id="date-hour"
+          name="date-hour"
+          required>
+
+        <!--EMAIL-->
+          <label
+          class="reservation__form reservation__form-label"
+          for="e-mail">
+        Seu e-mail *
+        </label>
+          <input
+          class="reservation__form reservation__form-input"
+          type="email"
+          id="e-mail"
+          name="e-mail"
+          placeholder="email@email.com"
+          required>
+
+        <!--BOTÃO-->
+          <button
+          class="reservation__form reservation__form-button"
+          type="submit">
+        Reservar uma mesa
+        </button>
+
+      <!--CAIXA DE SELEÇÃO-->
+        <label
+         class="reservation__label"
+         for="checkbox">
+      Eu concordo com os termos de uso
+      </label>
+        <input
+         class="reservation__item reservation__item_check-align"
+         type="checkbox"
+         id="checkbox"
+         name="checkbox"
+         required>
+        </fieldset>
+        </form>
+      </section>
     </main>
     <footer class="footer" id="footer"></footer>
   </div>
