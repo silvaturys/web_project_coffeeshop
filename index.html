@@ -6,7 +6,6 @@
   <meta name="description" content="Café forte para um coração leve"/>
   <meta name="author" content="Arthur Fernandes"/>
   <meta name="keywords" content="coffee web design"/>
-  <link rel="stylesheet" href="./vendor/normalize.css"/>
   <link rel="stylesheet" href="pages/index.css">
   <link rel="shortcut icon" href="./favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,7 +106,7 @@
         <h2 class="reservation__title"> Reservar uma mesa </h2>
         <form class="form reservation__form">
         <!--NOME-->
-          <fieldset class="form reservation__form-item">
+          <fieldset class="form">
             <label
             class="reservation__form reservation__form-label"
             for="name">
@@ -173,22 +172,56 @@
 
       <!--CAIXA DE SELEÇÃO-->
         <label
-         class="reservation__label"
+         class="reservation__form reservation__form-label"
          for="checkbox">
-      Eu concordo com os termos de uso
-      </label>
         <input
          class="reservation__item reservation__item_check-align"
          type="checkbox"
          id="checkbox"
          name="checkbox"
          required>
+         Eu concordo com os termos de uso
+        </label>
         </fieldset>
         </form>
       </section>
     </main>
-    <footer class="footer" id="footer"></footer>
+      <!--FOOTER-->
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <!--CIRCULO-->
+        <div class="footer__circle"> </div>
+      <!--LOGO-->
+        <img
+        class="footer__logo"
+        src="./images/logo_coffeeshop_light.svg"
+        alt="logo triple expresso">
+        <div class="footer__social">
+        <h3 class="footer__social-heading"> Mídia social </h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__social-link" href="#">
+              <img
+              class="footer__social-icon"
+              src="./images/facebook_white.svg"
+              alt="Ícone Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__social-link" href="#">
+              <img
+              class="footer__social-icon"
+              src="./images/instagram_white.svg"
+              alt="Ícone Instagram">
+              Instagram
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+          <p class="footer__copyright"> © 2024 Arthur M S Fernandes </p>
+    </footer>
   </div>
-
 </body>
 </html>
